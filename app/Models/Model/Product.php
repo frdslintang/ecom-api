@@ -7,5 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    use HasFactory;
+    use HasFactory; // Tambahkan trait HasFactory
+
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
 }

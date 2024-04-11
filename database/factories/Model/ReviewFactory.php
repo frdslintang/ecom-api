@@ -5,9 +5,6 @@ namespace Database\Factories\Model;
 use App\Models\Model\Product;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model\Review>
- */
 class ReviewFactory extends Factory
 {
     /**
@@ -18,8 +15,8 @@ class ReviewFactory extends Factory
     public function definition(): array
     {
         return [
-            'product_id' => function(){
-                return Product::factory()->create()->id;
+            'product_id' => function () {
+                return Product::all()->random()->id;
             },
             'customer' => $this->faker->name,
             'review' => $this->faker->paragraph(),

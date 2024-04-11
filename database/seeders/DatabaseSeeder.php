@@ -2,8 +2,6 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-
 use App\Models\Model\Product;
 use App\Models\Model\Review;
 use Illuminate\Database\Seeder;
