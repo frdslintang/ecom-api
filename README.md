@@ -64,3 +64,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+Create Laravel Ecommerce RESTful API using Laravel API Resource (new in laravel 10)  instead of Fractal Package.
+Here we do OAuth authentication with Passport Package and also create full CRUD part for Products and its reviews.
